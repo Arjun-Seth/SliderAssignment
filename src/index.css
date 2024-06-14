@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.rc-slider-rail {
+  position: absolute;
+  width: 50%;
+  height: 10px;
+  background-color: #f2f3f5 !important ;
+  border-radius: 6px;
+}
+.rc-slider-track,
+.rc-slider-tracks {
+  position: absolute;
+  height: 10px !important ;
+  background-color: #47b647 !important;
+  border-radius: 6px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.rc-slider-handle {
+  position: absolute;
+  z-index: 1;
+  width: 24px !important;
+  height: 24px !important;
+  margin-top: -7px !important;
+  background-color: #47b647  !important;
+  border: solid 6px #fff  !important;
+  border-radius: 50%;
+
+  cursor: pointer !important;
+  opacity: 1  !important;
+  touch-action: pan-x;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.24) !important;
+}
+
+.rc-slider-handle:hover {
+  border-color: #edfaed !important;
+}
+.rc-slider-handle:active {
+  border-color: #fff !important;
+  /* box-shadow: 0 0 5px #57c5f7; */
+  /* cursor: -webkit-grabbing; */
+  outline: 2px solid #47b647 !important;
+  cursor: pointer !important;
+}
+
+.rc-slider-step{
+  height: 10px !important;
+
+}
+
+.rc-slider-dot {
+  position: absolute;
+  bottom: 3px !important;
+  width: 4px !important;
+  height: 4px !important;
+  vertical-align: middle;
+  background-color: #47b647 !important;
+  border: 0 !important;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rc-slider-dot-active {
+  background-color: #fff !important;
+}
+
+.rc-slider-dot-reverse {
+  margin-right: 0px !important;
 }
